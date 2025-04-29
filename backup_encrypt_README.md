@@ -14,8 +14,12 @@ This project automates backing up a selected directory and encrypting it with GP
    Update these variables inside `backup_encrypt.sh`:
    - `SOURCE`: Directory you want to back up.
    - `DEST`: Destination folder for storing backups.
-   - `PASSPHRASE`: Your encryption passphrase (or modify to prompt for passphrase).
+   - `PASSPHRASE`: Your encryption passphrase
+  
+2. You will be asked to enter your encryption passphrase **twice** for confirmation.
+3. If the passphrases don't match, the backup process will exit safely without saving any files.
 
-2. **Make the Script Executable**
+4. **Make the Script Executable**
    ```bash
    chmod +x backup_encrypt.sh
+
